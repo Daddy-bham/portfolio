@@ -9,7 +9,10 @@ function createProjectTile(props){
         <ProjectTile 
         key={props.id}
         title={props.title}
-        desc={props.description} />
+        desc={props.description}
+        source={props.source}
+        demoURL={props.demo}
+         />
     );
 }
 
@@ -19,8 +22,8 @@ const Project=()=>
             <div className="bg-info p-2">
                 <h4 className="text-center fs-1"><b>Projects</b></h4>
             </div>
-            <div className="container py-4">
-                <div className="row justify-content-center">
+            <div className="container py-5">
+                <div className="row justify-content-between justify-content-sm-evenly">
                     {ProjectDetails.map(createProjectTile)}
                 </div>
             </div>

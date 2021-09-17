@@ -1,16 +1,16 @@
 import React from "react";
-import img from "./images/karun.png";
+import img from "./images/karunesh.png";
 
 export default function IntroSection() {
   return (
-    <div className="d-flex p-3 flex-wrap">
-      <div className="m-5 p-5 justify-content-sm-center text-white">
-        <h6 className="fs-2">
+    <div className="d-flex p-lg-5 justify-content-evenly flex-wrap">
+      <div className="m-1 p-5 pb-sm-4 text-white">
+        <h6 className="intro-content-head">
           Hello there! I'm{" "}
-          <span className="text-info">Karunesh Tripathi...</span>
+          <span className="text-info"><i>Karunesh Tripathi...</i></span>
         </h6>
-        <h2 style={{ color: "orange" }}>Building beautiful web apps.</h2>
-        <p>Web Developer focused on detail oriented design and development.</p>
+        <h2 style={{ color: "orange" }} className="intro-content-description">Building beautiful web apps.</h2>
+        <p className="intro-content-description">Web Developer focused on detail oriented design and development.</p>
         <span className="social-links mt-4 text-warning">
           <a href="https://www.instagram.com/karunesh__/">
             <i class="px-2 fab fa-instagram fa-lg"></i>
@@ -25,8 +25,8 @@ export default function IntroSection() {
             <i class="px-2 fab fa-twitter fa-lg"></i>
           </a>
         </span>
-        <div className="mt-3">
-          <button type="button" class="btn my-4 me-5 btn-outline-info btn-lg">
+        <div className="mt-1">
+          <button type="button" class="btn my-4 me-4 btn-outline-info btn-md">
             <a
               href="#contact"
               style={{ color: "inherit", textDecoration: "none" }}
@@ -34,13 +34,18 @@ export default function IntroSection() {
               Contact Me
             </a>
           </button>
-          <button type="button" class="btn btn-outline-info btn-lg">
+          <button type="button" class="btn btn-outline-info btn-md">
+            <a 
+              href="https://1drv.ms/b/s!AjzQwmywAP7YiFR7zotMP22aueQp"
+              style={{ color: "inherit", textDecoration: "none" }}
+              >
             My Resume
+            </a>
           </button>
         </div>
       </div>
-      <div className="my-5">
-        <img className="p-2 greeting-pic" alt="AuthorPicture" src={img} />
+      <div className="justify-content-sm-center">
+        <img className="p-2 m-4 p-sm-1 m-sm-2 greeting-pic" alt="AuthorPicture" src={img} />
       </div>
     </div>
   );

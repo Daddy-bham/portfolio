@@ -12,7 +12,7 @@ function App() {
       <div className="bg-warning">
         <Navbar />
       </div> 
-      <div className="bg-dark">
+      <div className="bg-dark intro-container">
         <IntroSection />
       </div>
       <div className="bg-light" id="projects">
@@ -22,8 +22,8 @@ function App() {
         <Contact />
         <br />
       </div>
-      <div className="text-center fs-xs m-3">
-        Copyright&#169; Karunesh Tripathi 
+      <div className="text-center fs-xs m-2">
+        <i>Copyright&#169; Karunesh Tripathi </i>
       </div>
     </div>
   );
